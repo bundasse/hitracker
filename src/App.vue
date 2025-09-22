@@ -1,23 +1,15 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import HitMap from './components/HitMap.vue'
+import TodoList from './components/TodoList.vue';
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <HitMap msg="You did it!" />
+      <TodoList/>
     </div>
   </header>
-
-  <RouterView />
 </template>
 
 <style scoped>
