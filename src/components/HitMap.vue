@@ -5,6 +5,9 @@ defineProps({
     required: true,
   },
 })
+function cellColor() {
+  return 'lightGray'
+}
 </script>
 
 <template>
@@ -13,7 +16,7 @@ defineProps({
     <div class="hitMap">
         <template v-for="week in 52" :key="week">
             <template v-for="day in 7" :key="day">
-                <div class="cell" style="background-color: gray;"></div>
+                <div class="cell" :style="'background-color:'+cellColor()"></div>
             </template>
         </template>
     </div>
@@ -27,6 +30,8 @@ defineProps({
     gap: 4px;
 }
 .cell{
-    width:16px; height:16px; border-radius: 2px;
+    width:16px;
+    height:16px;
+    border-radius: 2px;
 }
 </style>
