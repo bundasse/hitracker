@@ -8,8 +8,8 @@ import WeekList from '@/components/WeekList.vue';
 <template>
   <div class="wrapper">
     <HitMap msg="You did it!" />
-    <div class="d-flex box" style="border: 1px solid blue">
-      <div class="d-flex flex-column">
+    <div class="d-flex box">
+      <div class="d-flex flex-column" style="gap:4px">
         <MonthList/>
         <WeekList/>
       </div>
@@ -22,13 +22,14 @@ import WeekList from '@/components/WeekList.vue';
 .box{
   justify-content: space-between;
   gap: 12px;
+  margin-top: 20px;
 }
 .box>div{
   flex-grow: 1;
 }
 .listWrapper{
-  padding: 12px;
-  border:1px solid red;
-  border-radius: 12px;
+  padding: 2px 20px;
+  border: 1px solid lightblue;
+  border-radius: 20px;
 }
 </style>

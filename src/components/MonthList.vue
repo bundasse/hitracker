@@ -4,7 +4,7 @@ import TodoComponent from '@/components/TodoComponent.vue';
 
 <template>
   <div class="listWrapper">
-    <h4>Monthly Plan</h4>
+    <h3 class="planTitle">Monthly Plan</h3>
     <TodoComponent/>
   </div>
 </template>
