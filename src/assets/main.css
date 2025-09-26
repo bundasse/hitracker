@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
 .wrapper{
   width: 1080px;
   margin: 0 auto;
@@ -19,6 +25,5 @@
 }
 
 .planTitle{
-  border: 1px solid green;
-  font-weight: 500;
+  font-family: 'Paperozi';
 }

@@ -8,10 +8,10 @@ function setEditFlg(value) {
 </script>
 <template>
     <div class="d-flex buttons">
-      <button v-if="!editFlg" @click="setEditFlg(true)">edit</button>
+      <button v-if="!editFlg" @click="setEditFlg(true)"><i class='bx bx-edit'></i></button>
         <template v-else>
-            <button @click="setEditFlg(false)">submit</button>
-            <button @click="setEditFlg(false)">cancel</button>
+            <button @click="setEditFlg(false)"><i class='bx bx-check'></i></button>
+            <button @click="setEditFlg(false)"><i class='bx bx-x'></i></button>
         </template>
     </div>
     <div>
@@ -19,7 +19,7 @@ function setEditFlg(value) {
             <li class="d-flex">
                 <input type="checkbox" name="" id="">
                 <p>뭐시기저시기</p>
-                <button v-if="editFlg">X</button>
+                <button v-if="editFlg"><i class='bx bx-list-x'></i></button>
             </li>
         </ul>
     </div>
@@ -29,5 +29,14 @@ function setEditFlg(value) {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+button{
+    border: 0;
+    background: none;
+    color: #888888;
+    font-size: 20px;
+}
+button:hover{
+    color: black;
 }
 </style>
