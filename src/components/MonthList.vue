@@ -4,8 +4,9 @@ import TodoComponent from '@/components/TodoComponent.vue';
 
 <template>
   <div class="listWrapper">
-    <h3 class="planTitle">Monthly Plan</h3>
-    <TodoComponent/>
+    <TodoComponent>
+      <h3 class="planTitle">Monthly Plan</h3>
+    </TodoComponent>
   </div>
 </template>
 

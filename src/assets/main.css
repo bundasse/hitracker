@@ -4,20 +4,41 @@
     font-weight: 900;
     font-display: swap;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper{
+  width: 100%;
+  background-color: lightblue;
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer{
   width: 1080px;
+  background-color: white;
   margin: 0 auto;
   min-height: 100vh;
   height: 100%;
-  padding: 0;
+  padding: 40px 20px;
 }
 
 .d-flex{
     display: flex;
 }
+.header{
+  justify-content: space-between;
+  align-items: end;
+}
 .buttons{
   justify-content: end;
-  align-items: end;
+  width: 100px;
 }
 
 .flex-column{
@@ -26,4 +47,8 @@
 
 .planTitle{
   font-family: 'Paperozi';
+  margin: 0;
+}
+.listText{
+  margin: 0;
 }

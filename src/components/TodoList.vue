@@ -8,10 +8,11 @@ const todayDate = today.getDate()
 </script>
 <template>
   <div class="listWrapper">
-    <h2>
+    <TodoComponent>
+      <h2 class="planTitle">
         {{ todayYear }}-{{ todayMonth }}-{{ todayDate }}
-    </h2>
-    <TodoComponent/>
+      </h2>
+    </TodoComponent>
   </div>
 </template>
 
